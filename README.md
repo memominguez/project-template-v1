@@ -48,6 +48,7 @@ STYLING
 - Every component has attached its on module.css
 - Some general styling is set in the index.css
 - Only excepction is the MainNavigation component, whose stylesheet is conventional type. This is because of some functionality issues.
+- RESPONSIVE DESIGN is tested for 360px smallest screen size.
 
 ---
 
