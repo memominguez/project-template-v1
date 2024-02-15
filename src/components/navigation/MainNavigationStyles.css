@@ -1,0 +1,128 @@
+.header {
+  /* max-width: 70rem; */
+  height: 5rem;
+  /* margin: auto;  */
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header .logo img {
+  width: 2rem;
+}
+
+header .logo h1 {
+  color: var(--reddish);
+}
+
+header nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  /* list-style: none; */
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--white);
+  /* font-size: 1.2rem; */
+}
+
+header nav a:hover,
+header nav a.active {
+  color: var(--reddish);
+  /* text-decoration: underline; */
+}
+
+header nav .showlinks {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+header nav .showlinks .no-link {
+  text-decoration: none !important;
+  color: var(--white) !important;
+}
+
+header nav .dropdown {
+  padding-top: 1rem;
+  background: var(--less-dark);
+  list-style: none;
+  position: absolute;
+  left: -3.5rem;
+  transform: translateY(-170px);
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+}
+
+header nav .dropdown.open {
+  transform: translateY(100px);
+  opacity: 1;
+}
+
+header nav .dropdown li {
+  padding: 0.7rem 0.7rem 0.7rem 0;
+  /* padding: 0.7rem; */
+}
+
+header nav .showlinks:hover .dropdown {
+  transform: translateY(100px);
+  opacity: 1;
+}
+
+header .nav-btn {
+  padding: 5px;
+  height: 2.4rem;
+  cursor: pointer;
+  background: var(--reddish);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: var(--white);
+  display: none;
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  header .nav-btn {
+    display: block;
+  }
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 100vh;
+    width: 100%;
+    background: var(--less-dark);
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    transition: 1s;
+    z-index: 999;
+  }
+  header .responsive_nav {
+    transform: translateX(-100vh);
+  }
+  header nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: transparent;
+  }
+
+  header nav .dropdown.open {
+    transform: translateY(90px) translateX(20px);
+  }
+}
