@@ -9,6 +9,7 @@ import LatestBlogs from "../components/latest-blogs/LatestBlogs";
 import BlogsMap from "../components/latest-blogs/BlogsMap";
 import UiUxBanner from "../components/uiux-banner/UiUxBanner";
 import HeroesRev1 from "../components/heroes-rev1/HeroesRev1";
+import Slider from "../components/slider/Slider";
 
 export default function TestingPage() {
   return (
@@ -21,8 +22,9 @@ export default function TestingPage() {
       {/* <UiUxBanner /> */}
       {/* <HeroesRev1 /> */}
       {/* <WeProvide /> */}
-      <div className="dummySection1"></div>
       {/* <BlogsMap longList={true}/> */}
+      <div className="dummySection1"></div>
+      <Slider />
       <div className="dummySection2"></div>
     </>
   );

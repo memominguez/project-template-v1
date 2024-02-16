@@ -4,7 +4,7 @@ import Slide from "./Slide";
 import styles from "./slide.module.css"
 
 function Slider() {
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(0);  
 
   useEffect(() => {
     let slider = setInterval(() => {
@@ -20,8 +20,7 @@ function Slider() {
         <div
           key={person.id}
           className={
-            person.id - 1 === current ? `${styles.container} ${styles.active}` : `${styles.container}`
-          }
+            person.id - 1 === current ? `${styles.container} ${styles.active}` : `${styles.container}`}
         >
           {person.id - 1 === current && (
             <Slide

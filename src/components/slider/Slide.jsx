@@ -1,13 +1,12 @@
 /* eslint-disable react/prop-types */
 import { LuQuote } from "react-icons/lu";
-import styles from "./slide.module.css"
+import styles from "./slide.module.css";
 
-function Slide({ citation, image, name, title }) { 
-
+function Slide({ citation, image, name, title }) {
   return (
-    <div className={styles.container}>
+    <>
       <div className={styles.left}>
-      <LuQuote className={styles.quoteIcon}/>
+        <LuQuote className={styles.quoteIcon} />
       </div>
 
       <div className={styles.right}>
@@ -20,7 +19,7 @@ function Slide({ citation, image, name, title }) {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

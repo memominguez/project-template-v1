@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { useInView } from "react-intersection-observer";
+//import { useInView } from "react-intersection-observer";
 import styles from "./servicesList.module.css";
 import { FaSquareFull } from "react-icons/fa";
 import service2 from "../../assets/Service-2.png";
@@ -7,16 +7,15 @@ import service3 from "../../assets/Service-3.png";
 import service4 from "../../assets/Service-4.png";
 
 function ServicesListShort() {
-  const { ref, inView } = useInView({
-    threshold: 0.3,
-    delay: 300,
-  });
+  // const { ref, inView } = useInView({
+  //   threshold: 0.3,
+  //   delay: 300,
+  // });
 
   return (
-    <div ref={ref} className={styles.container}>
+    <div className={styles.container}>
       <div className={styles.gridContainer}>
-        {/* Cell 1 */}
-        {inView && (
+        {/* Cell 1 */}      
           <div className={styles.cell}>
             <div className={styles.contentType1}>
               <img src={service2} alt="" className={styles.serviceImg} />
@@ -40,7 +39,7 @@ function ServicesListShort() {
               </ul>
             </div>
           </div>
-        )}
+      
 
         {/* Cell 2 */}
         <div className={styles.cell}>
@@ -67,8 +66,7 @@ function ServicesListShort() {
           </div>
         </div>
 
-        {/* Cell 3 */}
-        {inView && (
+        {/* Cell 3 */}       
           <div className={styles.cell}>
             <div className={styles.contentType3}>
               <img src={service4} alt="" className={styles.serviceImg} />
@@ -92,7 +90,7 @@ function ServicesListShort() {
               </ul>
             </div>
           </div>
-        )}
+       
       </div>
     </div>
   );
