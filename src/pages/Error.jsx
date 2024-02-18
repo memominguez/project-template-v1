@@ -1,12 +1,13 @@
-import MainNavigation from "../components/Navigation/MainNavigation";
+
+import Navigation from "../components/navigation-rev-2/Navigation";
 
 function ErrorPage() {
   return (
-    <>
-      <MainNavigation />
+    <>    
+      <Navigation />
       <main>
-        <h1>An error occurred!</h1>
-        <p>Could not find this page!</p>
+        <h1 style={{textAlign: "center"}}>An error occurred!</h1>
+        <p style={{textAlign: "center"}}>Could not find this page!</p>
       </main>
     </>
   );

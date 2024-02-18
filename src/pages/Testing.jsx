@@ -15,7 +15,7 @@ export default function TestingPage() {
   return (
     <>   
       {/* <MakeTogether /> */}
-      {/* <MasterTouch /> */}
+    
       {/* <SomeWorksShort /> */}
       {/* <SomeWorksMap longList={true}/> */}
       {/* <LatestBlogs /> */}
@@ -23,8 +23,9 @@ export default function TestingPage() {
       {/* <HeroesRev1 /> */}
       {/* <WeProvide /> */}
       {/* <BlogsMap longList={true}/> */}
+      {/* <Slider /> */}
       <div className="dummySection1"></div>
-      <Slider />
+        <MasterTouch />
       <div className="dummySection2"></div>
     </>
   );

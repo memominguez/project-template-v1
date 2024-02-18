@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import logoImg from "../../assets/aritmetiquis.png";
 import { FaArrowDown, FaBars, FaTimes } from "react-icons/fa";
-import "./MainNavigationStyles.css";
+//import "./MainNavigationStyles.css";
 
 // Reference source
 // https://www.youtube.com/watch?v=amf18mxNX18
@@ -19,7 +19,7 @@ function MainNavigation() {
 
   function toggleDropdown() {
     setDropdown((prev) => !prev);
-    console.log(dropdown);
+    // console.log(dropdown);
   }
 
   return (
